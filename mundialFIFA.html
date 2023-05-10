@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<h1>Programa Adivinanzas</h1>
+<script>
+    function saltarlinea(){
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write("<big>"+frase+"</big>");
+        saltarlinea();
+    }
+
+    function sorteo(n){
+        return numPensado = Math.round(Math.random()*n);
+    }
+
+    var añoMundial = 1930;
+    
+
+    while (añoMundial <= 2020){
+        
+        imprimir("Hubo mundial FIFA "+añoMundial);
+        añoMundial += 4;
+    }
+    
+
+</script>

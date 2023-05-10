@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<h1>Programa IMC</h1>
+<script>
+    function saltarlinea(){
+        document.write("<br>"+"<br>"+"<br>"+"<br>"+"<br>");
+    }
+
+    function imprimir(frase){
+        document.write("<big>"+frase+"</big>");
+        saltarlinea();
+    }
+
+    function clasimc(indice){
+        if (indice < 18.5){
+            imprimir("Insuficiencia ponderal");
+        }else if(indice == 18.5 && indice <= 24.9){
+            imprimir("Intervalo normal");
+        }else if(indice >= 25 && indice <= 29.9){
+            imprimir("Obesidad-preobesidad");
+        }else if(indice >= 30 && indice <= 34.9){
+            imprimir("Obesidad-clase I");
+        }else if(indice >= 35 && indice <= 39.9){
+            imprimir("Obesidad-clase II");
+        }else if(indice >= 40){
+            imprimir("Obesidad-Clase III");
+        }
+
+    }
+
+    function calcularIMC(p,a){
+        var imc = p / Math.pow(a,2);
+        imprimir("Su IMC es: "+imc);
+        clasimc(imc);
+        
+    }
+    peso1 = prompt("Ingrese peso")
+    altura1 = prompt("Ingrese altura")
+    nombre = "Carlos"
+    calcularIMC(peso1,altura1)
+
+    
+
+
+</script>

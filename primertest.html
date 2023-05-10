@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<h1>mi primer programa html</h1>
+
+<br>
+<br>
+es un programa 
+<a href="https://psicologiaymente.com/reflexiones/frases-de-aristoteles">click aqui</a>
+<br>
+<script>
+    function saltarlinea(){
+        document.write("<br>"+"<br>"+"<br>");
+
+    }
+    //funcion que imprime textos de manera mas ágil
+    function imprimir(texto){
+        document.write(texto);
+        saltarlinea();
+    }
+    
+    var edad_1 = 23;
+    var edad_2 = 12;
+    var diferencia = edad_1 -edad_2;
+    saltarlinea();
+
+    imprimir("La diferencia de edades es: "+ diferencia);
+</script>
